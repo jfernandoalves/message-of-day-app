@@ -1,0 +1,4 @@
+com\example\springbootjpa\repository\MessageOfDayRepository.class
+com\example\springbootjpa\SpringBootJpaApplication.class
+com\example\springbootjpa\entity\MessageOfDay.class
+com\example\springbootjpa\controller\MessageOfDayController.class
