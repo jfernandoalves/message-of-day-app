@@ -1,22 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Message of the Day</title>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("http://localhost:8080/messageOfDay")
-          .then((response) => response.json())
-          .then((data) => {
-            document.getElementById("message").innerText = data.message;
-          })
-          .catch((error) => console.error("Error fetching message:", error));
-      });
-    </script>
+    <title>Minha Aplicação Incrível</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 800px;
+        width: 90%;
+      }
+
+      h1,
+      h2 {
+        color: #007bff;
+      }
+
+      p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .feature-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .feature-list li {
+        background-color: #e9ecef;
+        padding: 20px;
+        border-radius: 6px;
+        text-align: center;
+        width: 200px;
+      }
+
+      .feature-list li h3 {
+        color: #28a745;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #28a745;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #218838;
+      }
+
+      .app-logo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Message of the Day</h1>
-    <p id="message">Loading...</p>
+    <div class="container">
+      <h1>Bem-vindo à Minha Aplicação Incrível!</h1>
+      <p>
+        Descubra uma nova maneira de [descreva brevemente o propósito da sua
+        aplicação].
+      </p>
+
+      <h2>Recursos Principais</h2>
+      <ul class="feature-list">
+        <li>
+          <h3>Recurso 1</h3>
+          <p>Breve descrição do recurso 1.</p>
+        </li>
+        <li>
+          <h3>Recurso 2</h3>
+          <p>Breve descrição do recurso 2.</p>
+        </li>
+        <li>
+          <h3>Recurso 3</h3>
+          <p>Breve descrição do recurso 3.</p>
+        </li>
+      </ul>
+
+      <p>Pronto para começar?</p>
+      <a href="#" class="cta-button">Experimente Agora!</a>
+    </div>
   </body>
 </html>
